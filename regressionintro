@@ -9,7 +9,7 @@ import datetime,pickle
 
 style.use('ggplot')
 
-df = Quandl.get("WIKI/IBM")
+df = Quandl.get("WIKI/GOOGL")
 ##########Take only relevant data#############
 df = df[['Adj. Open',  'Adj. High',  'Adj. Low',  'Adj. Close', 'Adj. Volume']]
 df['HL_PCT'] = (df['Adj. High'] - df['Adj. Low']) / df['Adj. Close'] * 100.0
